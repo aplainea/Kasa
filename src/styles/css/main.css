@@ -313,10 +313,17 @@ template {
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#root {
+  padding: 2.5rem 6.25rem;
+}
+
 a {
   outline: none;
   text-decoration: none;
-  color: rgb(0, 0, 0);
 }
 
 ul {
