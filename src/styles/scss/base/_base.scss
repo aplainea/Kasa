@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: $black;
+}
+
+ul {
+    list-style: none;
+}
+
+p,
+ul,
+figure,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
