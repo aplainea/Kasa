@@ -8,7 +8,7 @@ export default function ErrorPage() {
     return (
         <>
             <Header />
-            <section>
+            <section className="error-page">
                 <div>
                     <h1>404</h1>
                     <p>Oups! La page que vous demandez n'existe pas.</p>
