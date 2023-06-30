@@ -3,11 +3,13 @@
 }
 
 body {
+    max-width: 1440px;
+    margin: auto;
     background-color: $white;
 }
 
-#root {
-    padding: 2.5rem 6.25rem;
+#detail {
+    padding: 0 100px;
 }
 
 a {
@@ -30,4 +32,10 @@ h3 {
 
 ul {
     padding: 0;
+}
+
+@media screen and (max-width: 375px) {
+    #detail {
+        padding: 0 20px;
+    }
 }

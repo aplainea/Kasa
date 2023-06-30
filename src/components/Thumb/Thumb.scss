@@ -1,0 +1,47 @@
+.thumb {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 11px;
+
+    &:hover {
+        border: 2px solid $primary;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    &-gradiant {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: $gradiant;
+    }
+
+    h2 {
+        font-size: 18px;
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: $white;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .thumb {
+        width: 335px;
+        height: 255px;
+
+        &-gradiant {
+            height: 120px;
+        }
+    }
+}

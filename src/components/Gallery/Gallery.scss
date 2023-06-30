@@ -1,0 +1,17 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 25px;
+    background: $secondary;
+    padding: 50px;
+    gap: 50px;
+}
+
+@media screen and (max-width: 375px) {
+    .gallery {
+        background: $white;
+        padding: 0;
+        gap: 20px;
+    }
+}

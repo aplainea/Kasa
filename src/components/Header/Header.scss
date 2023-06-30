@@ -2,7 +2,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 63px;
+    margin-bottom: 60px;
+    padding: 40px 100px 0px 100px;
 
     img {
         width: 210px;
@@ -17,8 +18,28 @@ header {
     a {
         color: $primary;
 
-        &.active {
+        &.active,
+        &:hover {
             text-decoration-line: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        margin-bottom: 16px;
+        padding: 20px 20px 0px 20px;
+
+        img {
+            width: 145px;
+            height: 47px;
+            flex-shrink: 0;
+        }
+
+        ul {
+            gap: 10px;
+            text-transform: uppercase;
+            font-size: 12px;
         }
     }
 }

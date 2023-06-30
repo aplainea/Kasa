@@ -1,7 +1,13 @@
+import TitleBanner from "../../components/TitleBanner/TitleBanner";
+import Gallery from "../../components/Gallery/Gallery";
+import HomeBannerBackground from "../../assets/home_banner_background.svg";
+
 export default function HomePage() {
+    const title = "Chez vous, partout et ailleurs";
     return (
         <>
-            <h1>Home</h1>
+            <TitleBanner title={title} img={HomeBannerBackground} />
+            <Gallery />
         </>
     );
 }

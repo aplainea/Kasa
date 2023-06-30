@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    width: 100%;
+    padding: 65px 0 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 28.556px;
+    background: $black;
+    color: $white;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 375px) {
+    footer {
+        padding: 62px 0px;
+        justify-content: center;
+    }
+}
