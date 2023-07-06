@@ -1,14 +1,10 @@
-export default function Dropdown({ title, content }) {
+export default function Dropdown({ title, content, open }) {
     function dropdownContent() {
         if (title === "Équipements") {
             return (
-                <ul>
+                <ul className="text">
                     {content.map((content, index) => {
-                        return (
-                            <li key={index} className="text">
-                                {content}
-                            </li>
-                        );
+                        return <li key={index}>{content}</li>;
                     })}
                 </ul>
             );
@@ -18,7 +14,7 @@ export default function Dropdown({ title, content }) {
     }
 
     return (
-        <details>
+        <details open={open}>
             <summary>
                 {title}
                 <span className="icon" />
@@ -27,3 +23,7 @@ export default function Dropdown({ title, content }) {
         </details>
     );
 }
+
+Dropdown.defaultProps = {
+    open: true,
+};

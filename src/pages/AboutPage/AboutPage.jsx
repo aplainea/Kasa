@@ -21,9 +21,21 @@ export default function AboutPage() {
                     title="Fiabilité"
                     content={dropdownContent.fiabilite}
                 />
-                <Dropdown title="Respect" content={dropdownContent.respect} />
-                <Dropdown title="Service" content={dropdownContent.service} />
-                <Dropdown title="Securité" content={dropdownContent.securite} />
+                <Dropdown
+                    title="Respect"
+                    content={dropdownContent.respect}
+                    open={false}
+                />
+                <Dropdown
+                    title="Service"
+                    content={dropdownContent.service}
+                    open={false}
+                />
+                <Dropdown
+                    title="Securité"
+                    content={dropdownContent.securite}
+                    open={false}
+                />
             </div>
         </>
     );

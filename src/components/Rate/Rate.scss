@@ -1,0 +1,18 @@
+.rate {
+    display: flex;
+    gap: 10px;
+
+    .star {
+        &-red {
+            width: 25px;
+            height: 25px;
+            background-image: url("../../assets/icons/star-red.svg");
+        }
+
+        &-gray {
+            width: 25px;
+            height: 25px;
+            background-image: url("../../assets/icons/star-gray.svg");
+        }
+    }
+}
