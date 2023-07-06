@@ -9,20 +9,37 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 263px;
+        height: 260px;
         text-align: center;
-        font-size: 288px;
+        font-size: 280px;
         font-weight: 700;
-        margin-bottom: 66px;
+        margin-bottom: 65px;
     }
 
     p {
         font-size: 36px;
-        margin-bottom: 182px;
+        margin-bottom: 180px;
     }
 
     a {
         text-decoration-line: underline;
         color: $primary;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .error-page {
+        h1 {
+            height: 100px;
+            font-size: 100px;
+            margin-top: 200px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            padding: 0 50px;
+            margin-bottom: 130px;
+        }
     }
 }
