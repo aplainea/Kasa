@@ -1,32 +1,3 @@
-// details {
-//     width: 100%;
-//     height: 50px;
-//     background: $primary;
-//     border-radius: 5px;
-
-//     summary {
-//         list-style: none;
-
-//         ::-webkit-details-marker {
-//             display: none;
-//         }
-//     }
-
-//     p {
-//         padding-block: 36px;
-//         padding-inline: 20px;
-//     }
-// }
-
-// details summary::before {
-//     content: url("../../assets/icons/arrow_up.svg");
-//     color: red;
-// }
-
-// details[open] summary::before {
-//     content: url("../../assets/icons/arrow_down.svg");
-//     color: red;
-// }
 details {
     width: 100%;
     container: collapse / inline-size;
