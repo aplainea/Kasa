@@ -21,12 +21,20 @@ export default function Carousel({ title, images }) {
         return `${currentPosition}/${totalImages}`;
     };
 
+    const showButtonsAndPosition = images.length > 1;
+
     return (
         <div className="carousel">
-            <button className="icon-left" onClick={handlePrev} />
+            {showButtonsAndPosition && (
+                <button className="icon-left" onClick={handlePrev} />
+            )}
             <img src={images[currentIndex]} alt={`${title}`} />
-            <button className="icon-right" onClick={handleNext} />
-            <div className="position">{getCurrentPosition()}</div>
+            {showButtonsAndPosition && (
+                <button className="icon-right" onClick={handleNext} />
+            )}
+            {showButtonsAndPosition && (
+                <div className="position">{getCurrentPosition()}</div>
+            )}
         </div>
     );
 }
